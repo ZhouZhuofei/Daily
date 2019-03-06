@@ -32,7 +32,7 @@ ggplot(pressure, aes(x = temperature, y = pressure)) + geom_line()
 
 qplot(pressure$temperature, pressure$pressure, geom = c("line", "point"))
 
-ggplot(pressure, aes(x = temperature, y = pressure)) + geom_line() +geom_point()
+ggplot(pressure, aes(x = temperature, y = pressure)) + geom_line() + geom_point()
 
 ############################################
 #Draw a bar chat
