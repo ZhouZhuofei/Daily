@@ -38,3 +38,17 @@ ggplot(pressure, aes(x = temperature, y = pressure)) + geom_line() + geom_point(
 #Draw a bar chat
 
 barplot(BOD$demand, name.arg = BOD$Time)
+
+##Calculate the frequency
+
+table(mtcars$cyl)
+
+barplot(table(mtcars$cyl))
+
+#for ggplot2
+
+library(ggplot2)
+ggplot(BOD, aes(x = Time, y= demand)) + geom_bar(stat = "identity")
+
+ggplot(mtcars, aes(x = factor(cyl))) + geom_bar()
+
