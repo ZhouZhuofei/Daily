@@ -3,5 +3,5 @@
 ### *A sample life*
 ****
 - [ ]0ne
--[ ]two
--[]three
++ [ ]two
+* []three
