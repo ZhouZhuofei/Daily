@@ -75,3 +75,14 @@ def getThreeGrade() :
     return x, y, z
 
 main3()
+
+def main4() :
+    n, yob = getNameAndYOB()
+    print(n, "will be", 2020 - yob, "years old in 2020")
+
+def getNameAndYOB() :
+    name = input("Enter a name: ")
+    yearOfBirth = int(input("Enter a year of birth : "))
+    return name, yearOfBirth
+
+main4()
