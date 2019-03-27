@@ -43,3 +43,35 @@ def displayBill(cost, addedCost) :
     print("Total cost: ${0:.2f}".format(cost + addedCost))
 
 main1()
+
+def main2() :
+    grade = int(input("Enter your numberic grade: "))
+    showResult(grade)
+
+def showResult(grade) :
+    if passedExam(grade) :
+        print("You passed with a grade of", str(grade) + '.')
+    else :
+        print("You failed the exam.")
+
+def passedExam(grade) :
+    if grade >= 60:
+        return True
+    else :
+        return False
+
+main2()
+
+
+def main3() :
+    gradeList = list(getThreeGrade())
+    gradeList.sort()
+    print(gradeList)
+
+def getThreeGrade() :
+    x = int(input("Enter first grade :"))
+    y = int(input("Enter second grade :"))
+    z = int(input("Enter third grade : "))
+    return x, y, z
+
+main3()
